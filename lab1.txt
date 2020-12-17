@@ -1,0 +1,17 @@
+AWS configure 
+
+aws s3 mb s3://arsen.kozhan
+
+AWS s3 ls
+
+cd /Users/macbook/Documents/ht
+
+aws s3 sync . s3://arsen.kozhan
+
+aws s3api put-bucket-website --bucket arsen.kozhan --website-configuration file://website.json
+
+aws s3api put-bucket-website --bucket arsen.kozhan --website-configuration file://policy.json
+
+aws s3api put-bucket-policy --bucket arsen.kozhan --policy file://policy.json      
+
+
